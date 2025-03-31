@@ -8,7 +8,15 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13,<4.0"
 dependencies = [
-    "fastapi[standard] (>=0.115.12,<0.116.0)"
+    "fastapi[standard] (>=0.115.12,<0.116.0)",
+    "aioftp (>=0.24.1,<0.25.0)",
+    "alembic (>=1.15.2,<2.0.0)",
+    "sqlalchemy (>=2.0.40,<3.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "python-decouple (>=3.8,<4.0)",
+    "passlib (>=1.7.4,<2.0.0)",
+    "python-jose (>=3.4.0,<4.0.0)",
+    "python-multipart (>=0.0.20,<0.0.21)"
 ]
 
 [tool.ruff]
