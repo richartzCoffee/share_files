@@ -1,5 +1,6 @@
 import shutil
 from fastapi import FastAPI, UploadFile
+from share_files.routes import router,test_router
 
 from http import HTTPStatus
 
@@ -9,6 +10,8 @@ app = FastAPI()
 def read_root():
     return {'message': 'Olá Mundo!'}
 
+app.include_router(router)
+app.include_router(test_router)
 
 # @app.post('/send-file', status_code=HTTPStatus.CREATED)
 # async def create_upload_file(file: UploadFile):
